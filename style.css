@@ -105,7 +105,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: #050303;
+  background-color:rgb(90, 87, 87);
 }
 
 .navbar {
@@ -411,7 +411,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: #000;
+  background-color:rgb(90, 87, 87);
   padding: 20px 0;
 }
 
@@ -436,7 +436,7 @@ footer a {
   @media screen and (max-width: 860px) {
   .navbar .all-links {
     position: fixed;
-    right: -100%; /* Change from left to right */
+    right: 100%; /* Change from left to right */
     width: 250px;
     display: block;
     height: 100vh;
@@ -546,17 +546,17 @@ footer a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(234, 228, 228, 0.5);
+ 
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 
 .modal-content {
-  background-color: #120f0f;
+  background-color:rgb(90, 87, 87);
   padding: 1px;
   border-radius: 1px;
-  box-shadow: 0 0 10px rgba(8, 8, 8, 0.2);
+  
   height: 57px;
 }
 
@@ -642,10 +642,61 @@ footer a {
 
 .client-container {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 20px;
+  background-color: #ffffff; /* Add your desired background color */
+  border: 2px solid #453f3f; /* Add your desired border color and size */
+  padding: 15px; /* Add padding for better visual appearance */
+  border-radius: 10px; /* Add border radius for rounded corners */
 }
+
+.client {
+  max-width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.client {
+  margin-bottom: 20px; /* Adjust margin between clients accordingly */
+}
+
+.client::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px dotted #8a9d92; /* Add your desired dotted line color */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.client {
+  max-width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  transition: box-shadow 0.3s ease; /* Smooth transition effect */
+}
+
+.client:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add your desired shadow effect */
+}
+
+.client img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.client p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+
 
 .client {
   width: 200px; /* Set a fixed width for each client box */
@@ -713,7 +764,7 @@ a {
 }
 
 #backToTopBtn:hover {
-  background-color: #1a3baf;
+  background-color: #b73f3f;
 }
 
 
