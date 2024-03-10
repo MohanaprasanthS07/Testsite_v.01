@@ -67,6 +67,4 @@ function scrollFunction() {
     backToTopBtn.style.display = "none";
   }
 
-  }
-  
-
+}
