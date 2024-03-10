@@ -1,0 +1,741 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Heavy Vehicle styles */
+.services .cards .card h3 {
+  color: tomato;
+}
+
+/* Light Vehicle styles */
+.services .cards .card h3 {
+  color: navy;
+}
+
+
+/* horizontal line for site */
+hr {
+  border-width: 5px; /* You can adjust this value to change the thickness */
+}
+
+
+
+/* horizontal line for service card */
+.customers hr.hr1 {
+  border: 2px dashed transparent; /* Set initial border as transparent */
+  margin-top: 15px;
+  margin-bottom: 3px;
+  animation: rainbowGlow 4s linear infinite; /* Animation for glowing effect */
+}
+
+@keyframes rainbowGlow {
+  0% {
+    border-color: violet;
+  }
+  14% {
+    border-color: indigo;
+  }
+  28% {
+    border-color: blue;
+  }
+  42% {
+    border-color: green;
+  }
+  57% {
+    border-color: yellow;
+  }
+  71% {
+    border-color: orange;
+  }
+  85% {
+    border-color: red;
+  }
+  100% {
+    border-color: violet;
+  }
+}
+
+/* text font for all */
+
+body, h1, h2, h3, h4, h5, h6, p, li, a, span, div, input, textarea, button {
+  font-family: "sans-serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+/* Service bending effect */
+.services .cards .card {
+  position: relative;
+  border-radius: 20px;
+}
+
+
+/* Customer card bending effect */
+.customers .cards .card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+  border-radius: 5px 5px 20px 20px;
+}
+
+.customers .cards .card:hover {
+  transform: perspective(1000px) rotateX(10deg);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #050303;
+}
+
+.navbar {
+  display: flex;
+  padding: 0 10px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar input#menu-toggler {
+  display: none;
+}
+
+/* Add this CSS for the glowing effect on specific navigation bar options */
+.navbar a {
+  text-decoration: none;
+  position: relative;
+  color: #fff; /* Set the default text color */
+  transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.navbar a:hover {
+  color: #ddd; /* Set the color on hover */
+}
+
+.glow a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: transparent; /* Set the initial color of the underline */
+  bottom: -1px; /* Adjust the position of the underline */
+  left: 0;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.glow a:hover::before {
+  background-color: #fff; /* Set the glowing color on hover */
+  animation: glow 0.5s infinite alternate; /* Add glow animation */
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #fff; /* Set initial glow effect */
+  }
+  100% {
+    box-shadow: 0 0 20px #fff; /* Set final glow effect */
+  }
+}
+
+
+.navbar #hamburger-btn {
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .all-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .all-links li {
+  position: relative;
+  list-style: none;
+}
+
+.navbar .logo a {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+header a{
+  margin-left: 40px;
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  padding: 20px 0;
+  display: inline-block;
+}
+
+header a:hover{
+  color: #ddd;
+}
+
+.homepage {
+  height: 100vh;
+  width: 98;
+  position: relative;
+  background: url("images/home.jpeg");
+  background-position: center 100%;
+  background-size: cover;
+}
+
+.homepage::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.homepage .content {
+  display: flex;
+  height: 100%;
+  Width:100%;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+}
+
+.homepage .content h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.homepage .content .text {
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content a {
+  color: #000;
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: #fff;
+  border: 2px solid #fff;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.3);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 0 0;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+section > p {
+  text-align: center;
+}
+
+section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin-top: 30px;
+  padding: 0 10px;
+  justify-content:space-between;
+}
+
+section.about {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.about .company-info {
+  margin-top: 30px;
+}
+
+.about h3 {
+  margin: 30px 0 10px;
+}
+
+.about .team {
+  text-align: left;
+  width: 100%;
+}
+
+.about .team ul {
+  padding-left: 20px;
+}
+
+section .cards .card {
+  background: #fff;
+  padding: 40px 15px;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+  margin-bottom: 40px;
+  width: calc(100% / 3 - 30px);
+  text-align: center;
+}
+
+.customers .cards .card {
+  padding: 0 0 20px;
+  border-radius: 20px;
+  }
+  
+.services .card img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 170px;
+ 
+}
+/* service card circle small animation */
+.services .card:hover img {
+  transform: rotateX(28deg);
+}
+
+.customers .card img {
+  width: 100%;
+  padding-bottom: 10px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.cards .card p {
+  padding: 0 15px;
+  margin-top: 5px;
+}
+
+.about .row {
+  padding: 0 10px;
+}
+
+.contact .row {
+  margin: 60px 0 90px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .row .col {
+  padding: 0 10px;
+  width: calc(100% / 2 - 50px);
+}
+
+.contact .col p {
+  margin-bottom: 10px;
+}
+
+.contact .col p i {
+  color: #7a7a7a;
+  margin-right: 10px;
+}
+
+.contact form input {
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #bfbfbf;
+}
+
+.contact form textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  height: 150px;
+  outline: none;
+  resize: vertical;
+  border: 1px solid #bfbfbf;
+}
+
+.contact form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #333;
+  transition: 0.2s ease;
+}
+
+.contact form button:hover {
+  background: #525252;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #000;
+  padding: 20px 0;
+}
+
+footer div {
+  padding: 0 10px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer span {
+  color: #fff;
+}
+
+footer a {
+  padding: 0;
+}
+
+/* three line hamburg */
+
+  @media screen and (max-width: 860px) {
+  .navbar .all-links {
+    position: fixed;
+    right: -100%; /* Change from left to right */
+    width: 250px;
+    display: block;
+    height: 100vh;
+    top: 75px;
+    background: #804141;
+    transition: right 0.3s ease; /* Change from left to right */
+  }
+
+  .navbar #menu-toggler:checked~.all-links {
+    right: 0; /* Change from left to right */
+  }
+}
+
+  .navbar .all-links li {
+    font-size: 18px;
+  }
+
+  .navbar #hamburger-btn {
+    display: block;
+  }
+
+  section > p {
+    text-align: center;
+  }
+
+  section .cards .card {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 30px;
+  }
+
+  .homepage .content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .homepage .content .text {
+    font-size: 17px;
+  }
+
+  .content a {
+    font-size: 17px;
+    padding: 9px 20px;
+  }
+
+  .contact .row {
+    flex-direction: column;
+  }
+
+  .contact .row .col {
+    width: 100%;
+  }
+
+  .contact .row .col:last-child {
+    margin-top: 40px;
+  }
+
+
+
+
+@media screen and (max-width: 560px) {
+  section .cards .card {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+/* Button to book */
+.paint-button-container {
+  text-align: center;
+  margin-top: 15px; /* Adjust the margin based on your design */
+}
+
+.paint-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #33b316;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.paint-button:hover {
+  background-color: #425449;
+}
+
+/* Spark Effect Styles */
+.spark {
+  position: fixed;
+  width: 15px;
+  height: 14px;
+  background-color: #eeff00; /* Spark color */
+  border-radius: 300%;
+  pointer-events: none; /* To make sure the spark doesn't interfere with other elements */
+  z-index: 9999; /* Ensure it's above other elements */
+  display: none; /* Initially hidden */
+}
+
+
+/*google */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #120f0f;
+  padding: 1px;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(8, 8, 8, 0.2);
+  height: 57px;
+}
+
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* error send message */
+
+.error-title {
+  color: #fff !important; /* Set the title text color */
+  font-size: 24px !important; /* Set the title font size */
+}
+
+.error-content {
+  color: #fff !important; /* Set the content text color */
+}
+
+/* glow effect for borders */
+.about-container .team ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-container .team ul li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-container .team ul li::before {
+  content: "▶"; /* Unicode character for right arrow */
+  position: absolute;
+  left: 0;
+}
+
+.about-container {
+  position: relative;
+  padding: 20px; /* Add some padding for spacing within the border */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle shadow for depth */
+}
+
+.about-container:before,
+.about-container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent; /* Set the border color and thickness */
+  border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  animation: glow 2s infinite linear;
+}
+
+.about-container:before {
+  top: 0;
+  left: 0;
+  border-image: linear-gradient(to right, transparent, #00f0ff, transparent); /* Adjust the color of the glowing effect */
+  border-image-slice: 1;
+}
+
+.about-container:after {
+  bottom: 0;
+  right: 0;
+  border-image: linear-gradient(to left, transparent, #00f0ff, transparent); /* Adjust the color of the glowing effect */
+  border-image-slice: 1;
+}
+
+@keyframes glow {
+  0%, 100% {
+    border-width: 2px;
+  }
+  50% {
+    border-width: 10px;
+  }
+}
+
+
+/* client says */
+
+.client-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.client {
+  width: 200px; /* Set a fixed width for each client box */
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  animation: moveBox 10s linear infinite; /* Adjust the animation duration */
+  transition: transform 0.3s ease-in-out; /* Add smooth transition for zoom effect */
+}
+
+.client:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+}
+
+.clients-say {
+  text-align: center;
+}
+
+.client img {
+  width: 190px; /* Set a fixed width for the images */
+  height: 100px; /* Set a fixed height for the images */
+  object-fit: cover; /* Maintain aspect ratio and cover the specified size */
+}
+
+
+/* contact details */
+.contact-box {
+  border: 4px solid #ccc;
+  padding: 10px;
+  max-width: 3000px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.contact-box p {
+  margin: 0;
+}
+
+.contact-box i {
+  margin-right: 5px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+
+/* back to up button */
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 1px; /* Updated to move the button to the left */
+  font-size: 24px;
+  background-color: #0004ff;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+#backToTopBtn:hover {
+  background-color: #1a3baf;
+}
+
+
+/* Add this CSS for the button hover effect */
+
+
+.inputBox4 {
+  width: 200px; /* Set your desired width for the box */
+  border-radius: 10px; /* Set your desired border-radius value */
+}
+
+.myButton4 {
+  width: 100%; /* Take up the full width of the parent */
+  background-color: orange;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Set your desired border-radius value */
+}
+
+.myButton4:hover {
+  background-color: lightgreen;
+}

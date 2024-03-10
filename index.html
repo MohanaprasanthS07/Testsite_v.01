@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Balamurugan Painting Works</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  
+     
+  
+  </head>
+  
+  <header>
+    
+
+      <div class="spark" id="spark"></div>
+      <nav class="navbar">
+        <h4 class="logo"><a>Sri Balamurugan<br> Painting Works</a></h4>
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeTranslateModal()">&times;</span>
+          <div id="google_translate_element"></div>
+        </div>
+          
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+
+        <ul class="all-links">
+          <li class="glow"><a href="#home">Home</a></li>
+          <li class="glow"><a href="#services">Services</a></li>
+          <li class="glow"><a href="#customers">Customers</a></li>
+          <li class="glow"><a href="#about">About Us</a></li>
+          <li class="glow"><a href="#contact">Contact Us</a></li>
+        </ul>
+        
+      </nav>
+    </header>
+  
+
+    <body>
+     
+      <div id="backToTopBtn" onclick="scrollToTop()">
+        &uarr;
+      </div>
+ 
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+         
+          <h1>WELCOME</h1>
+          <p>
+            Sri Balamurugan Painting Works<br>Sankagiri</p>
+        </div>
+        <a href="#services">Our Services</a>
+      </div>
+    </section>
+
+
+    <section class="services" id="services">
+   <h2>Our Services</h2> 
+      <p>Explore our Transport Painting services.</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="images/trucks.jpeg" alt="img">
+          <h3 style="color: tomato;">Trucks | Heavy Vehicle</h3>
+          <p>We Accept all types of Truck's / Lorry's For Painting</p>
+
+          <div class="paint-button-container">
+            <button class="paint-button" onclick="startPainting('Trucks')">Register For Painting</button>
+          </div>
+
+        </li>
+
+        <li class="card">
+          <img src="images/bus.jpeg" alt="img">
+          <h3 style="color: tomato;">Buses | Heavy Vehicle</h3>
+          <p>We Accept all types of Buses For Painting</p>
+
+          <div class="paint-button-container">
+            <button class="paint-button" onclick="startPainting('Trucks')">Register For Painting</button>
+          </div>
+
+        </li>
+
+
+        <li class="card">
+          <img src="images/container.jpeg" alt="img">
+          <h3 style="color: tomato;">Truck Tankers | Heavy Vehicle</h3>
+          <p>We Accept For all types truck tankers, containers For Painting </p>
+
+          <div class="paint-button-container">
+            <button class="paint-button" onclick="startPainting('Trucks')">Register For Painting</button>
+          </div>
+
+        </li>
+
+
+        <li class="card">
+          <img src="images/car.jpeg" alt="img">
+          <h3 style="color: navy;">Cars | Light Vehicle</h3>
+          <p>We Accept For all types Car's For Painting</p>
+
+          <div class="paint-button-container">
+            <button class="paint-button" onclick="startPainting('Trucks')">Register For Painting</button>
+          </div>
+
+        </li>
+        
+        <li class="card">
+          <img src="images/van.jpeg" alt="img">
+          <h3 style="color: navy;">Mini Vans | Light Vehicle</h3>
+          <p>We Accept For all types Mini Van's For Painting</p>
+          <div class="paint-button-container">
+            <button class="paint-button" onclick="startPainting('Trucks')">Register For Painting</button>
+          </div>
+          
+        <li class="card">
+          <img src="images/jeep.jpeg" alt="img">
+          <h3 style="color: navy;">Jeep | Light Vehicle</h3>
+          <p>We Accept For all types Jeep's For Painting </p>
+
+          <div class="paint-button-container">
+            <button class="paint-button" onclick="startPainting('Trucks')">Register For Painting</button>
+          </div>
+
+        </li>
+        
+       
+        </li>
+      </ul>
+    </section><br><hr>
+
+    <section class="customers" id="customers">
+      <h2>Our Trusted Customers</h2>
+      <p>Take a look at some of our Customers over last 20+ Years.</p>
+    
+        <ul class="cards">
+          <li class="card">
+            <img src="images/royal.jpeg" alt="img">
+            <h3>Royal Transports</h3>
+            <p>Our Trusted Customers over last 20+ years</p>
+            <hr class="hr1">
+            <p>Thank you <br>Royal Transport for traveling with us till now.</p>
+          </li>
+          <li class="card">
+          <img src="images/sivasakthi.png" alt="img">
+          <h3>Siva Sakthi Transports</h3>
+         
+          <p>Our Trusted Customers over last 20+years</p>  <hr class="hr1">
+          <p>Thankyou <br>Siva Sakthi Transport travelling with us till now.</p>
+        </li>
+        <li class="card">
+          <img src="images/AMAN.png" alt="img">
+          <h3>Amman Transports</h3>
+          <p>Our Trusted Customers over last 20+years</p> <hr class="hr1">
+          <p>Thankyou <br>Amman Transport travelling with us till now.</p>
+        </li>
+        <li class="card ">
+          <img src="images/KCT.png" alt="img">
+          <h3>KCT Transports</h3>
+          <p>Our Trusted Customers over last 20+years</p> <hr class="hr1">
+          <p>Thankyou <br>KCT Transport travelling with us till now.</p>
+        </li>
+        <li class="card">
+          <img src="images/MKS.png" alt="img">
+          <h3>MKS Transports</h3>
+          <p>Our Trusted Customers over last 20+years</p> <hr class="hr1">
+          <p>Thankyou <br>MKS Transport travelling with us till now.</p>
+        </li>
+        <li class="card">
+          <img src="images/SPN.png" alt="img">
+          <h3>SPN Transports</h3>
+          <p>Our Trusted Customers over last 20+years</p> <hr class="hr1">
+          <p>Thankyou <br>SPN Transport travelling with us till now.</p>
+        </li>
+
+        <li class="card">
+          <img src="images/100.png" alt="img">
+          <h3>More Than 100+ Transports Customers</h3>
+          <p>We Have More Than 100+ Trusted Transports Customers in Past 10 years</p><hr class="hr1">
+          <p>Thankyou <br>All Transports Customers travelling with us till now.</p>
+        </li>
+      </ul>
+    </section>
+    <br>
+
+   
+
+<div class="about-container">
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Discover our story in providing Painting services.</p>
+    <div class="row company-info">
+      <h3>Our Story</h3>
+      <p>We Landed For This Work On 1997 in this Field. Experience the excellence of our Painting and Services, where we have offered high-quality Painting Services for the above-listed vehicle types. 
+        Our commitment to quality and customer satisfaction is an essential part of us.</p>
+    </div>
+    <div class="row mission-vision">
+      <h3>Our Mission</h3>
+      <p>Providing Quality Painting Services For Transport Vehicles in Proper $Amount$ </p>
+      <h3>Our Vision</h3>
+      <p>Based On Customer Wish Painting Provided For Their Transport Vehicle | Following Time Keeping | Premium Quality Paint | Quality Painting | Proper $Amount$ For Painting Works </p>
+    </div>
+    <div class="row team">
+      <h3>Our Team</h3>
+      <ul>
+        <li>Sundaram A - Owner & Painting Specialist [25+ Years Experience]</li>
+        <li>Team With Highly Skilled Members For Painting Works [10+ Members]</li>
+        <li>Availablity Of Watchguard For Secure Your Priceless Vehicle </li>
+        <li>MohanaPrasanth S - Website Designer</li>
+      </ul>
+    </div>
+  </section>
+</div><br>
+<section class="clients-say" id="clients-say">
+  <h2>Our Clients Say</h2>
+  <p>What our clients say about us:</p>
+
+  <div class="client-container">
+    <div class="client">
+      <img src="images/Selliamman.png" alt="Client 1">
+      <p>Keep Timing | Nice Art of Work</p><br>
+      <p>-- Ganeshan <br>Owner of Selliamman Transports </p>
+    </div>
+
+    <div class="client">
+      <img src="images/TVS.png" alt="Client 2">
+      <p> Well Done Work | Premium Painting Style</p><br>
+      <p> -- Ganesan<br> Owner Of TVS Transports</p>
+    </div>
+
+    <div class="client">
+      <img src="images/PST .png" alt="Client 3">
+      <p>Perfect Finishing | Good &  Expert Painting Style.</p><br>
+      <p>-- Dhanabhal <br> Owner Of PST Transports</p>
+    </div>
+
+
+    <div class="client">
+      <img src="images/SCN.png" alt="Client 3">
+      <p>Perfect Handling Of Work | Good Art </p><br>
+      <p>-- Subash Sundaram <br> Owner Of SCN Transports</p>
+    </div>
+
+    <div class="client">
+      <img src="images/Jeyamurugan.png" alt="Client 3">
+      <p>Thankyou for Take care of my vehicle | Good painting Work | Better quality</p><br>
+      <p>-- Shanmugam <br>Owner Of Jeyamurugan Transports</p>
+    </div>
+
+
+  </div>
+</section><br><br>
+
+<hr>
+    
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>Reach out to us for any inquiries or feedback.</p><br>
+      <div class="contact-box">
+        <p><i class="fas fa-map-marker-alt"></i> Sri Balamurugan Painting Works<br>
+          Kolinchikattur<br>
+          Tamil Nadu-637103 <a href="https://maps.app.goo.gl/EP8DRbiFZ5NcBsH2A" target="_blank">[Click for map visit]</a></p>
+        <p><i class="fa fa-caret-right"></i> Near MST Hi-Tech Wheel Alignment </p>
+        <p><i class="fas fa-envelope"></i> sbmpw97@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 9842895865</p>
+        <p><i class="fas fa-clock"></i> Monday - Friday: 08:50 AM - 6:00 PM</p>
+        <p><i class="fas fa-clock"></i> Saturday: 08:50 AM - 6:00 PM</p>
+        <p><i class="fas fa-clock"></i> Sunday: 09:00 AM - 3:00 PM</p>
+        <p><i class="fas fa-lock"></i> This Website is copyrighted by developer </p>
+      </div><br>       
+        </div>
+
+        <div class="container5">
+          <form action="" id="contactForm5">
+            <div class="alert5">Thank You !!!</div>
+        
+            <div class="inputBox5">
+              <h3>Did You Want To Say Anything ? </h3><br>
+              <input type="text" id="name5" placeholder="Your Name here..." />
+            </div>
+        
+            <div class="inputBox5">
+              <input type="email" id="emailid5" placeholder="Your Email here..." />
+            </div>
+        
+            <div class="inputBox5">
+              <textarea id="msgContent5" cols="50" rows="30" placeholder="Type Message here..."></textarea>
+            </div>
+        
+            <div class="inputBox4">
+              <input type="submit" value="Send" class="myButton4">
+            </div>
+            
+            
+          </form>
+        </div>
+    </section><br>
+    
+<footer>
+      <div>
+        <span style="display: block;">Unstable Site Version 1.50 | copyrighted © 2024 All Rights Reserved | Site Designed By Mohan </span>
+       <!-- <span style="display: block;">Copyright © 2024 All Rights Reserved | Site Designed By Mohan</span>  -->
+      </div>
+    </footer>
+    
+    
+  </body>
+
+
+<script src="script.js"></script>
+
+  <script>
+    function startPainting(vehicleType) {
+      // Add your logic for starting the painting process, if needed
+
+      // Redirect to the specified URL 
+      window.open('https://forms.gle/LR53MFRTfkCZdQTP6', '_blank');
+    }
+  </script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+   <script src="./mail.js"></script>
+ 
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+ 
+
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</html>
