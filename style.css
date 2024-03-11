@@ -433,18 +433,18 @@ footer a {
 
 /* three line hamburg */
 
-  @media screen and (max-width: 860px) {
+  
+@media screen and (max-width: 860px) {
   .navbar .all-links {
     position: fixed;
     right: 100%; /* Change from left to right */
     width: 250px;
     display: block;
     height: 100vh;
-    top: 75px;
-    background: #804141;
+    top: 82px;
+    background: #847777;
     transition: right 0.3s ease; /* Change from left to right */
   }
-
   .navbar #menu-toggler:checked~.all-links {
     right: 0; /* Change from left to right */
   }
