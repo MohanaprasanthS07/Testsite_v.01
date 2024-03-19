@@ -17,6 +17,7 @@ html {
 
 
 
+
 /* Heavy Vehicle styles */
 .services .cards .card h3 {
   color: tomato;
@@ -79,7 +80,7 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, span, div, input, textarea, button {
 }
 
 body {
-  background: #f2f2f2;
+  background: #fffdfd;
 }
 
 /* Service bending effect */
@@ -727,3 +728,9 @@ a {
 .myButton4:hover {
   background-color: lightgreen;
 }
+
+
+
+
+
+
