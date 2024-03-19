@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
 
+
+<html lang="en">
+  
  
 
   <head>
@@ -11,14 +13,48 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Fontawesome Link for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+      /* Styles for the loader */
+      .loader-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999; /* Ensure the loader is on top of other content */
+      }
+      
+      .loader {
+        border: 8px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 8px solid #3498db;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
   
+      /* Additional styles to hide loader after page load */
+      .loaded .loader-container {
+        display: none;
+      }
+    </style>
      
   
   </head>
+      
   
   <header>
     
-
+    
       <div class="spark" id="spark"></div>
       <nav class="navbar">
         <h4 class="logo"><a>Sri Balamurugan<br> Painting Works</a></h4>
@@ -45,35 +81,28 @@
         
       </nav>
     </header>
-    <div class="wrap-loader">
-      <div class="loader">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="wrap-text"> 
-          <div class="text"><span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span><span>...</span>
-          </div>
-        </div>
-      </div>
-      <div class="loader-text">wait please</div>
+   
     </div>
 
     <body>
-     
       <div id="backToTopBtn" onclick="scrollToTop()">
         &uarr;
       </div>
  
-    <section class="homepage" id="home">
+    <section class="homepage" id="home"><br>
       <div class="content">
         <div class="text">
-         
           <h1>WELCOME</h1>
           <p>
             Sri Balamurugan Painting Works<br>Sankagiri</p>
-        </div>
-        <a href="#services">Our Services</a>
+        </div> 
+
+       
+        
+      
+
+  
+        
       </div>
     </section>
 
@@ -256,7 +285,7 @@
   <div class="client-container">
     <div class="client">
       <img src="images/Selliamman.png" alt="Client 1">
-      <p>Keep Timing | Nice Art of Work</p><br>
+      <p>Executing tasks at the right time | Proper Working</p><br>
       <p>-- Mr.Ganeshan <br>Owner of Selliamman Transports </p>
     </div>
 
@@ -275,13 +304,13 @@
 
     <div class="client">
       <img src="images/SCN.png" alt="Client 3">
-      <p>Perfect Handling Of Work | Good Art </p><br>
+      <p>Perfect Handling Of Work | Excellent Work of Painting </p><br>
       <p>-- Mr.Subash Sundaram <br> Owner Of SCN Transports</p>
     </div>
 
     <div class="client">
       <img src="images/Jeyamurugan.png" alt="Client 3">
-      <p>Thankyou for Take care of my vehicle | Good painting Work | Better quality</p><br>
+      <p>Thankyou For Takecare of client's Vehicle | Better quality of Painting Style</p><br>
       <p>-- Mr.Shanmugam <br>Owner Of Jeyamurugan Transports</p>
     </div>
 
@@ -297,13 +326,13 @@
       <p>Reach out to us for any inquiries or feedback.</p><br>
       <div class="contact-box">
          <p><i class='far fa-compass' style='font-size:16px;color:rgb(25, 153, 208)'></i> Sri Balamurugan Painting Works<br>
-          Sankagiri, Tamil Nadu-637103.<br> <a href="https://maps.app.goo.gl/EP8DRbiFZ5NcBsH2A" target="_blank">[Click for map visit]</p></a>
+          Sankagiri, Tamil Nadu-637103.<br> <a href="https://maps.app.goo.gl/Cz8ogiN6YhVwWT3V6" target="_blank">[Click for map visit]</p></a>
         <p><i class="fa fa-caret-right" style='font-size:22px'></i> Near AsokLeyLand Truck Dealer Showroom </p>
         <p><i class="fas fa-envelope" style='font-size:16px;color:rgb(181, 181, 33)'></i> sbmpw97@gmail.com</p>
         <p><i class="fas fa-phone"style='font-size:16px;color:grey'></i> 9842895865</p>
         <p><i class='fas fa-business-time' style='font-size:16px;color:rgb(0, 255, 42)'></i>Monday - Friday: 08:50 AM - 6:00 PM</p>
-        <p><i class='fas fa-business-time' style='font-size:16px;color:rgb(0, 255, 42)'></i>Saturday: 08:50 AM - 6:00 PM</p>
-        <p><i class='fas fa-business-time' style='font-size:16px;color:red'></i>Sunday: 09:00 AM - 3:00 PM</p>
+        <p><i class='fas fa-business-time' style='font-size:16px;color:rgb(0, 255, 42)'></i>Saturday: 08:50 AM - 7:00 PM</p>
+        <p><i class='fas fa-business-time' style='font-size:16px;color:red'></i>Sunday: 09:00 AM - 3:50 PM</p>
         <p><i class="fas fa-lock"></i> This Website is copyrighted by developer </p>
       </div><br>       
         </div>
@@ -364,5 +393,6 @@
  
 
   <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ 
 
 </html>
